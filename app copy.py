@@ -106,21 +106,21 @@ def ai_tutor_workflow(topic: str):
     history_quiz = history_quiz_chain.invoke(topic)
     history_story = stories.invoke(topic)
 
-    print("=== Explanation ===")
-    print(history_explaination)
+    # print("=== Explanation ===")
+    # print(history_explaination)
     
-    print("=== Historical Facts ===")
-    print(history_factss)
+    # print("=== Historical Facts ===")
+    # print(history_factss)
 
 
-    print("\n=== Quiz ===")
-    print(history_quiz)
+    # print("\n=== Quiz ===")
+    # print(history_quiz)
 
-    print("\n=== Timeline ===")
-    print(history_timeline)
+    # print("\n=== Timeline ===")
+    # print(history_timeline)
 
-    print("\n=== Storyline ===")
-    print(history_story)
+    # print("\n=== Storyline ===")
+    # print(history_story)
 
     return  history_quiz, history_factss, history_explaination, history_timeline, history_story
 
